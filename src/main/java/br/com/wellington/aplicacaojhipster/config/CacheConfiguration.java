@@ -48,6 +48,18 @@ public class CacheConfiguration {
             createCache(cm, br.com.wellington.aplicacaojhipster.domain.User.class.getName());
             createCache(cm, br.com.wellington.aplicacaojhipster.domain.Authority.class.getName());
             createCache(cm, br.com.wellington.aplicacaojhipster.domain.User.class.getName() + ".authorities");
+            createCache(cm, br.com.wellington.aplicacaojhipster.domain.Region.class.getName());
+            createCache(cm, br.com.wellington.aplicacaojhipster.domain.Country.class.getName());
+            createCache(cm, br.com.wellington.aplicacaojhipster.domain.Location.class.getName());
+            createCache(cm, br.com.wellington.aplicacaojhipster.domain.Department.class.getName());
+            createCache(cm, br.com.wellington.aplicacaojhipster.domain.Department.class.getName() + ".employees");
+            createCache(cm, br.com.wellington.aplicacaojhipster.domain.Task.class.getName());
+            createCache(cm, br.com.wellington.aplicacaojhipster.domain.Task.class.getName() + ".jobs");
+            createCache(cm, br.com.wellington.aplicacaojhipster.domain.Employee.class.getName());
+            createCache(cm, br.com.wellington.aplicacaojhipster.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, br.com.wellington.aplicacaojhipster.domain.Job.class.getName());
+            createCache(cm, br.com.wellington.aplicacaojhipster.domain.Job.class.getName() + ".tasks");
+            createCache(cm, br.com.wellington.aplicacaojhipster.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
